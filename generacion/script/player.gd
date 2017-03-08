@@ -1,12 +1,12 @@
 extends KinematicBody2D
-export var speed = 140
+export var speedP = 140
 var raynode
 func _ready():
 	set_fixed_process(true)
 	raynode = get_node("RayCast2D")
 
 func _fixed_process(delta):
-	var move = vector2()
+	var move = Vector2()
 	
 	if(Input.is_action_pressed("ui_up")):
 		move += Vector2(0,-1)
@@ -20,5 +20,6 @@ func _fixed_process(delta):
 	if(Input.is_action_pressed("ui_right")):
 		move += Vector2(1,0)
 		raynode.set_rotd(90)
-				
+	move = move.normalized()*speedP*delta
+	move(move)
 	
