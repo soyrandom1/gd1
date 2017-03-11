@@ -12,9 +12,9 @@
 		<resource name="0/texture" external="0">  </resource>
 		<vector2 name="0/tex_offset"> 0, 0 </vector2>
 		<resource name="0/material"></resource>		<rect2 name="0/region"> 0, 0, 32, 64 </rect2>
-		<vector2 name="0/occluder_offset"> 16, 32 </vector2>
-		<resource name="0/occluder"></resource>		<vector2 name="0/navigation_offset"> 16, 32 </vector2>
-		<resource name="0/navigation"></resource>		<vector2 name="0/shape_offset"> 16, 32 </vector2>
+		<vector2 name="0/occluder_offset"> 16, 47 </vector2>
+		<resource name="0/occluder"></resource>		<vector2 name="0/navigation_offset"> 16, 47 </vector2>
+		<resource name="0/navigation"></resource>		<vector2 name="0/shape_offset"> 16, 47 </vector2>
 		<array name="0/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://1">  </resource>
 		</array>
@@ -22,9 +22,9 @@
 		<resource name="1/texture" external="1">  </resource>
 		<vector2 name="1/tex_offset"> 0, 0 </vector2>
 		<resource name="1/material"></resource>		<rect2 name="1/region"> 0, 0, 32, 64 </rect2>
-		<vector2 name="1/occluder_offset"> 16, 32 </vector2>
-		<resource name="1/occluder"></resource>		<vector2 name="1/navigation_offset"> 16, 32 </vector2>
-		<resource name="1/navigation"></resource>		<vector2 name="1/shape_offset"> 16, 32 </vector2>
+		<vector2 name="1/occluder_offset"> 16, 47 </vector2>
+		<resource name="1/occluder"></resource>		<vector2 name="1/navigation_offset"> 16, 47 </vector2>
+		<resource name="1/navigation"></resource>		<vector2 name="1/shape_offset"> 16, 47 </vector2>
 		<array name="1/shapes" len="1" shared="false">
 			<resource  resource_type="Shape2D" path="local://1">  </resource>
 		</array>

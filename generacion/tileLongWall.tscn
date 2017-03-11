@@ -20,7 +20,7 @@ texture = ExtResource( 1 )
 editor/display_folded = true
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.218029, 16.7772 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.218029, 15.7772 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -31,7 +31,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D"]
 
-transform/pos = Vector2( 0.218029, 16.7772 )
+transform/pos = Vector2( 0.218029, 15.7772 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
@@ -43,10 +43,9 @@ texture = ExtResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite1"]
 
-editor/display_folded = true
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.218029, 16.7772 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.218029, 15.7772 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -57,7 +56,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite1/StaticBody2D"]
 
-transform/pos = Vector2( 0.218029, 16.7772 )
+transform/pos = Vector2( 0.218029, 15.7772 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
