@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://script/player.gd" type="Script" id=1]
-[ext_resource path="res://sprites/wall.png" type="Texture" id=2]
-[ext_resource path="res://sprites/pj.png" type="Texture" id=3]
+[ext_resource path="res://sprites/pj.png" type="Texture" id=2]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -31,7 +30,7 @@ points = Vector2Array( 5.5157, -18.5418, 2.50016, -25.7327, 5.86365, -22.1372 )
 
 [node name="Node2D" type="Node2D"]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+[node name="pl" type="KinematicBody2D" parent="."]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
@@ -55,21 +54,14 @@ collision/margin = 0.08
 script/script = ExtResource( 1 )
 speedP = 200
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="KinematicBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pl"]
 
 build_mode = 0
 polygon = Vector2Array( -13.0415, 11.3816, 4.23989, 11.4976, 4.23989, 6.51039, 16.6558, 1.35352, 5.39972, -9.84311, 7.71936, -9.72712, 7.37141, -18.7737, 5.5157, -18.5418, 5.86365, -22.1372, 2.50016, -25.7327, -12.1136, -25.6167, -15.3611, -22.1372, -15.2451, -7.2915, -12.9255, -7.05953 )
 shape_range = Vector2( 0, 4 )
 trigger = false
 
-[node name="Sprite" type="Sprite" parent="KinematicBody2D/CollisionPolygon2D"]
-
-transform/pos = Vector2( 14.9541, 0 )
-transform/scale = Vector2( 0.0653691, 1 )
-texture = ExtResource( 2 )
-flip_v = true
-
-[node name="RayCast2D" type="RayCast2D" parent="KinematicBody2D"]
+[node name="RayCast2D" type="RayCast2D" parent="pl"]
 
 enabled = false
 cast_to = Vector2( 0, 50 )
@@ -77,13 +69,13 @@ layer_mask = 1
 type_mask = 15
 __meta__ = { "_edit_lock_":true }
 
-[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+[node name="Sprite" type="Sprite" parent="pl"]
 
 transform/pos = Vector2( -2.78818, -7.00517 )
 transform/scale = Vector2( 1.0163, 0.974683 )
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 
-[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+[node name="Camera2D" type="Camera2D" parent="pl"]
 
 transform/pos = Vector2( 0, 0.237827 )
 anchor_mode = 1

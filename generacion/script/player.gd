@@ -19,11 +19,11 @@ func _fixed_process(delta):
 		raynode.set_rotd(-90)
 		get_node( "Sprite" ).set_flip_h(true)
 		get_node("CollisionPolygon2D").set_scale(Vector2(-1, 1))
-		get_node("CollisionPolygon2D").set_pos(get_node("CollisionPolygon2D").get_pos()-Vector2(3,0))
+		
 
 	if(Input.is_action_pressed("ui_right")):
 		move += Vector2(1,0)
-		get_node("CollisionPolygon2D").set_pos(get_node("CollisionPolygon2D").get_pos()+Vector2(3,0))
+
 		raynode.set_rotd(90)
 		get_node( "Sprite" ).set_flip_h(false)
 		
