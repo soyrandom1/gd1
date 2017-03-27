@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://sprites/gd.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+z/z = -2607
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="gd" type="Sprite" parent="Sprite"]
+
+transform/pos = Vector2( 512.232, 299.456 )
+transform/scale = Vector2( 1.64339, 1.66945 )
+texture = ExtResource( 1 )
+
+
