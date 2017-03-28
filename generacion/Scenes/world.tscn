@@ -17,6 +17,7 @@ extents = Vector2( 39.8054, 10 )
 [node name="TileMap 2" type="TileMap" parent="."]
 
 transform/pos = Vector2( 1, 0 )
+z/z = -3
 mode = 0
 tile_set = ExtResource( 1 )
 cell/size = Vector2( 32, 32 )
@@ -37,6 +38,7 @@ tile_data = IntArray( 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 13, 0, 
 
 transform/pos = Vector2( 456.49, 222.41 )
 transform/scale = Vector2( 1.70839, 1.70839 )
+z/z = -2
 
 [node name="TileMap" type="TileMap" parent="."]
 
