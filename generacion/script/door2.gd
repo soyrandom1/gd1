@@ -6,8 +6,6 @@ var t = false;
 
 func _ready():
 	var scene = load("res://miniscenes/loadtest.tscn")
-	
-
 
 func _on_Area2D_body_enter( body ):
 	if(!t):
@@ -16,6 +14,6 @@ func _on_Area2D_body_enter( body ):
 			var scene = preload("res://miniscenes/loadtest.tscn")
 			var node = scene.instance()
 			add_child(node)
-			node.set_pos(Vector2(-412,-586))
+			node.set_pos(Vector2(-400,-614))
 			t = true;
 		
