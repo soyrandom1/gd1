@@ -5,15 +5,15 @@ var t = false;
 # var b = "textvar"
 
 func _ready():
-	var scene = load("res://miniscenes/loadtest.tscn")
+	var scene = load("res://miniscenes/loadtestU.tscn")
 
 func _on_Area2D_body_enter( body ):
 	if(!t):
 		if(body.get_name() == "pl"):
 			print("out")
-			var scene = preload("res://miniscenes/loadtest.tscn")
+			var scene = preload("res://miniscenes/loadtestU.tscn")
 			var node = scene.instance()
 			add_child(node)
-			node.set_pos(Vector2(-400,-614))
+			node.set_pos(Vector2(0,-608))
 			t = true;
 		

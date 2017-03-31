@@ -18,15 +18,13 @@ func _fixed_process(delta):
 		move += Vector2(-1,0)
 		raynode.set_rotd(-90)
 		get_node( "Sprite" ).set_flip_h(true)
-		get_node("CollisionPolygon2D").set_scale(Vector2(-1, 1))
 		
-
 	if(Input.is_action_pressed("ui_right")):
 		move += Vector2(1,0)
 
 		raynode.set_rotd(90)
 		get_node( "Sprite" ).set_flip_h(false)
 		
-	move = move.normalized()*speedP*delta
+	move = move.normalized()*speedP*delta*1.5
 	move(move)
 	
